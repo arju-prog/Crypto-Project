@@ -12,10 +12,9 @@ function RandomCoins() {
     async function fetchCoins() {
       const ids = getRandomIds(coinsData);
       const idsString = ids.join(","); 
-      
       try {
         const response = await fetch(
-          `/api/coins/markets?vs_currency=usd&ids=${idsString}`,
+          `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${idsString}`,
           {
             method: "GET",
             headers: {
@@ -25,8 +24,9 @@ function RandomCoins() {
           }
         );
         const data = await response.json();
+        console.log(response)
         setCoins(data);
-        console.log(data)
+        // console.log(data)
       } catch (error) {
         console.error("Error fetching coins:", error);
       } finally {
