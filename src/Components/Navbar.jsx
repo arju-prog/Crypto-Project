@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/Users/arjun/Crypto/Crypto Project/src/assets/image.png';
+import logo from "../assets/logo.png"
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
