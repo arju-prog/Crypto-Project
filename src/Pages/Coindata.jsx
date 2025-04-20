@@ -3,6 +3,7 @@ import coinsData from "../assets/Array.json";
 import vdo from "../assets/my-movie.mp4"
 import Loading from "./Loading";
 
+
 function RandomCoins() {
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ function RandomCoins() {
             method: "GET",
             headers: {
               accept: "application/json",
-              "x-cg-api-key": "CG-P36eHv2gCriKmsBt4SX7bPjf"
+              "x-cg-api-key": `${import.meta.env.VITE_COIN_API_KEY}`
             }
           }
         );

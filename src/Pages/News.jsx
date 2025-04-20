@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Loading from './Loading';
 
-const API_KEY = "9c26d9038ab314b65022b8810456229d";
 const BASE_URL = "https://gnews.io/api/v4/search?q=";
 
 const NewsApp = () => {
@@ -17,7 +16,7 @@ const NewsApp = () => {
   async function fetchNews(searchQuery) {
     setLoading(true);
     try {
-      const res = await fetch(`${BASE_URL}${encodeURIComponent(searchQuery)}&lang=en&token=${API_KEY}`);
+      const res = await fetch(`${BASE_URL}${encodeURIComponent(searchQuery)}&lang=en&token=${import.meta.env.VITE_API_KEY}`);
       const data = await res.json();
       
       const filteredArticles = (data.articles || []).filter(article => article.image);
