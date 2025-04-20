@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../assets/image.png"
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+function Navbar() { 
   return (
     <nav className="relative w-full bg-[#0A0F1A] shadow-md">
       <div className="flex justify-between items-center px-6 py-4 h-34">
