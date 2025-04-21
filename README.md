@@ -12,7 +12,7 @@ A React-based web application that provides real-time cryptocurrency prices, lat
 ## Tech Stack
 - **React.js**
 - **React Router**
-- **CSS**
+- **TailwindCSS**
 
 ## Folder Structure
 ```
