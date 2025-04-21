@@ -1,12 +1,32 @@
-# React + Vite
+# Crypto & Market Info App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that provides real-time cryptocurrency prices, latest news related to stocks, crypto, and markets, and a feedback system for users to share their experience.
 
-Currently, two official plugins are available:
+## Features
+- **Home Page**: Introduction to the website and its features.
+- **Coin Data Page**: Displays real-time cryptocurrency prices. Clicking on any coin redirects users to its official site for detailed information.
+- **News Page**: Shows the latest news related to cryptocurrency, stock markets, and general financial updates.
+- **Feedback Page**: A form where users can write and submit their feedback about the app.
+- **Navigation**: Smooth navigation between pages using **React Router**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React.js**
+- **React Router**
+- **CSS**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Folder Structure
+```
+Components/
+  └── Navbar.jsx
+Pages/
+  ├── Coindata.jsx
+  ├── Coins.jsx
+  ├── Feedback.jsx
+  ├── Home.jsx
+  ├── Loading.jsx
+  └── News.jsx
+App.css
+App.jsx
+index.css
+main.jsx
+```
